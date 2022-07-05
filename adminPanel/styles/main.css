@@ -1,0 +1,236 @@
+
+
+body {
+
+  background: #222428;
+  /*background: -webkit-linear-gradient(-90deg, #d5c7c6, #64728f); 
+  background: -o-linear-gradient(-90deg, #d5c7c6, #64728f);
+  background: -moz-linear-gradient(-90deg, #d5c7c6, #64728f); 
+  background: linear-gradient(-180deg, #315386, #222428);*/
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+#main-container {
+  background: #eaedf2;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px 2px 2px 4px;
+}
+
+.dark-menu {
+  background: #33353c;
+  width: 70px;
+  height: calc(100% - 190px);
+  border-radius: 2px 0 0 2px;
+  text-align: center;
+  float: left;
+}
+
+.dark-menu a {
+  color: #76838c;
+  display: block;
+  padding: 17px;
+  text-decoration: none;
+}
+
+.dark-menu a:hover {
+  color: #fff;
+}
+
+.dark-menu a.active {
+  color: white;
+  border-left: solid #5e9cf7 3px;
+}
+
+.light-menu {
+  width: 120px;
+  height: calc(100% - 190px);
+  float: left;
+  margin-right: -9px;
+}
+
+.light-menu a {
+  color: #85899b;
+  display: block;
+  padding: 10px 10px 10px 22px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.light-menu a:hover {
+  color: #333;
+}
+
+.light-menu a.active {
+  color: #33353c;
+
+}
+
+.active-icon {
+  margin-left: -3px;
+}
+
+#search-btn {
+  background: #5e9cf7;
+  color: #fff;
+  border-radius: 2px 0 0 0;
+}
+
+.top-menu {
+  background: #fff;
+  width: calc(100% - 190px);
+  max-height: 56px;
+  float: left;
+  margin-left: -1px;
+}
+
+#page_title {
+  background: #fff;
+  padding: 11px 35px 11px 20px;
+  float: left;
+  font-size: 25px;
+  margin: 0px -10px 20px 0;
+}
+
+nav {
+  position: relative;
+  z-index: 1;
+  white-space: nowrap;
+  float: left;
+  position: relative;
+  left: 10px;
+}
+
+nav a {
+  position: relative;
+  display: inline-block;
+  padding: 1.9em 2em 1.2em 1em;
+  color: #757c8f;
+  text-decoration: none;
+  margin: 0 -3px;
+  position: relative;
+  top: 4px;
+  font-size: 13px;
+  font-weight: 600;
+} 
+
+nav a:hover::before {
+  content: ''; /* To generate the box */
+  position: absolute;
+  top: 0; right: 0; bottom: .5em; left: 0;
+  z-index: -1;
+  border-bottom: none;
+  border-radius: 5px 2px 0 0;
+  background: #eaedf2;
+  box-shadow: 0 2px hsla(0,0%,100%,.5) inset;
+  transform: perspective(5px) rotateX(2deg);
+  transform-origin: bottom left;
+}
+
+.active-tab::before {
+  content: ''; /* To generate the box */
+  position: absolute;
+  top: 0; right: 0; bottom: .5em; left: 0;
+  z-index: -10;
+  border-bottom: none;
+  border-radius: 5px 2px 0 0;
+  background: #eaedf2;
+  box-shadow: 0 2px hsla(0,0%,100%,.5) inset;
+  transform: perspective(5px) rotateX(2deg);
+  transform-origin: bottom left;
+  box-shadow: inset 0px 0px 10px #dadce0;
+  height: 80px;
+  margin-top: -14px;
+}
+
+.active-tab {
+  color: #5e9cf7;
+  padding: 1.9em 3em 1.2em 1em;
+  margin-right: -10px;
+  margin-left: 1px
+}
+
+#content {
+  background: #eaedf2;
+  width: calc(100% - 190px);
+  height: calc(100% - 190px);
+  float: left;
+  margin-left: 7px;
+  position: relative;
+  z-index: 10;
+}
+
+#table-content {
+  background: #fff;
+  width: 97.5%;
+  height: 100%;
+  margin-top: 20px;
+  box-shadow: #dcdee3 0px 0px 10px;
+  margin-left: 5px;
+}
+#header-content{
+   position: absolute;
+  bottom: 50;
+  right: 50;
+
+}
+#header-content a {
+  color: green;cursor:pointer;
+  display: block;
+  padding: 17px;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+#header-content a:hover {
+  color: silver;
+}
+
+#table-content table {
+  width: 100%;
+}
+
+#table-content thead {
+  background: #f2f3f5;
+}
+
+#table-content thead tr td {
+  color: #757e92;
+  font-size: 10px;
+  text-transform: uppercase;
+  padding: 14px 10px;
+}
+
+#table-content tbody tr td {
+  padding: 14px 10px;
+  border-bottom: #eaecee solid 1px;
+}
+
+#table-content tbody tr:hover {
+  background: #fefaf2;
+}
+
+.name-td {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.desc-td {
+  font-size: 13px;
+  color: #64697a;
+}
+
+.date-td {
+  text-align: right;
+  font-size: 9px;
+}
+
+.checked {
+  background: #fefaf2;
+}
+
